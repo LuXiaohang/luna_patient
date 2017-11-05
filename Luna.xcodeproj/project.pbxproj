@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2106041F1FA8071200125401 /* PAMTask.json in Resources */ = {isa = PBXBuildFile; fileRef = 2106041E1FA8071200125401 /* PAMTask.json */; };
+		210604211FA8078000125401 /* PAM.json in Resources */ = {isa = PBXBuildFile; fileRef = 210604201FA8078000125401 /* PAM.json */; };
+		2144DB921FA7D95D0006A1C0 /* UserDefaultsStateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2144DB911FA7D95D0006A1C0 /* UserDefaultsStateHelper.swift */; };
+		2144DB961FA7DADC0006A1C0 /* RKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2144DB951FA7DADC0006A1C0 /* RKViewController.swift */; };
+		2174AEC01FA76A1E00069172 /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2174AEBF1FA76A1E00069172 /* ResearchKit.framework */; };
+		2174AEC21FA76AD400069172 /* Pods_Luna.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2174AEC11FA76AD400069172 /* Pods_Luna.framework */; };
 		219A16B41F90154F00F8D2AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219A16B31F90154F00F8D2AC /* AppDelegate.swift */; };
 		219A16B61F90154F00F8D2AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219A16B51F90154F00F8D2AC /* ViewController.swift */; };
 		219A16B91F90154F00F8D2AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 219A16B71F90154F00F8D2AC /* Main.storyboard */; };
@@ -15,7 +21,9 @@
 		219A16C11F90154F00F8D2AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 219A16BF1F90154F00F8D2AC /* LaunchScreen.storyboard */; };
 		219A16CC1F90154F00F8D2AC /* LunaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219A16CB1F90154F00F8D2AC /* LunaTests.swift */; };
 		219A16D71F90155000F8D2AC /* LunaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219A16D61F90155000F8D2AC /* LunaUITests.swift */; };
+		21AFB8791FA773EB002658D6 /* sdlrkx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21AFB8781FA773EB002658D6 /* sdlrkx.framework */; };
 		21FD95B41F9138A300F79470 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21FD95B31F9138A300F79470 /* HealthKit.framework */; };
+		CD7E259224372E140924C6C6 /* Pods_Luna.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7763560B246D5F82B11E47D /* Pods_Luna.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +44,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2106041E1FA8071200125401 /* PAMTask.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = PAMTask.json; path = "../../sdl-rkx-master/Example/sdlrkx/PAMTask.json"; sourceTree = "<group>"; };
+		210604201FA8078000125401 /* PAM.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = PAM.json; path = "../../sdl-rkx-master/source/VSR/Core/Assets/PAM.json"; sourceTree = "<group>"; };
+		2144DB911FA7D95D0006A1C0 /* UserDefaultsStateHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsStateHelper.swift; sourceTree = "<group>"; };
+		2144DB951FA7DADC0006A1C0 /* RKViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RKViewController.swift; sourceTree = "<group>"; };
+		2174AEBF1FA76A1E00069172 /* ResearchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ResearchKit.framework; path = "../../Library/Developer/Xcode/DerivedData/Luna-hffvazvackcsosbfjpneojwxngwn/Build/Products/Debug-iphonesimulator/ResearchKit/ResearchKit.framework"; sourceTree = "<group>"; };
+		2174AEC11FA76AD400069172 /* Pods_Luna.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_Luna.framework; path = "Pods/../build/Debug-iphoneos/Pods_Luna.framework"; sourceTree = "<group>"; };
 		219A16B01F90154F00F8D2AC /* Luna.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Luna.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		219A16B31F90154F00F8D2AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		219A16B51F90154F00F8D2AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,8 +64,12 @@
 		219A16D21F90155000F8D2AC /* LunaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LunaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		219A16D61F90155000F8D2AC /* LunaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunaUITests.swift; sourceTree = "<group>"; };
 		219A16D81F90155000F8D2AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21AFB8781FA773EB002658D6 /* sdlrkx.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = sdlrkx.framework; path = "../../Library/Developer/Xcode/DerivedData/Luna-hffvazvackcsosbfjpneojwxngwn/Build/Products/Debug-iphonesimulator/sdlrkx/sdlrkx.framework"; sourceTree = "<group>"; };
 		21FD95B11F9138A300F79470 /* Luna.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Luna.entitlements; sourceTree = "<group>"; };
 		21FD95B31F9138A300F79470 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		5E76B6883045EF0636E097C9 /* Pods-Luna.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Luna.release.xcconfig"; path = "Pods/Target Support Files/Pods-Luna/Pods-Luna.release.xcconfig"; sourceTree = "<group>"; };
+		DF5632E7C48567CCA1976DF9 /* Pods-Luna.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Luna.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Luna/Pods-Luna.debug.xcconfig"; sourceTree = "<group>"; };
+		F7763560B246D5F82B11E47D /* Pods_Luna.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Luna.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +77,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21AFB8791FA773EB002658D6 /* sdlrkx.framework in Frameworks */,
+				2174AEC21FA76AD400069172 /* Pods_Luna.framework in Frameworks */,
+				2174AEC01FA76A1E00069172 /* ResearchKit.framework in Frameworks */,
 				21FD95B41F9138A300F79470 /* HealthKit.framework in Frameworks */,
+				CD7E259224372E140924C6C6 /* Pods_Luna.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +110,7 @@
 				219A16D51F90155000F8D2AC /* LunaUITests */,
 				219A16B11F90154F00F8D2AC /* Products */,
 				21FD95B21F9138A300F79470 /* Frameworks */,
+				CFACC026DC025E510D46029E /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +130,10 @@
 				21FD95B11F9138A300F79470 /* Luna.entitlements */,
 				219A16B31F90154F00F8D2AC /* AppDelegate.swift */,
 				219A16B51F90154F00F8D2AC /* ViewController.swift */,
+				2144DB951FA7DADC0006A1C0 /* RKViewController.swift */,
+				2144DB911FA7D95D0006A1C0 /* UserDefaultsStateHelper.swift */,
+				210604201FA8078000125401 /* PAM.json */,
+				2106041E1FA8071200125401 /* PAMTask.json */,
 				219A16B71F90154F00F8D2AC /* Main.storyboard */,
 				219A16BD1F90154F00F8D2AC /* Assets.xcassets */,
 				219A16BF1F90154F00F8D2AC /* LaunchScreen.storyboard */,
@@ -137,9 +164,22 @@
 		21FD95B21F9138A300F79470 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				21AFB8781FA773EB002658D6 /* sdlrkx.framework */,
+				2174AEC11FA76AD400069172 /* Pods_Luna.framework */,
+				2174AEBF1FA76A1E00069172 /* ResearchKit.framework */,
 				21FD95B31F9138A300F79470 /* HealthKit.framework */,
+				F7763560B246D5F82B11E47D /* Pods_Luna.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CFACC026DC025E510D46029E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DF5632E7C48567CCA1976DF9 /* Pods-Luna.debug.xcconfig */,
+				5E76B6883045EF0636E097C9 /* Pods-Luna.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,9 +189,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 219A16DB1F90155000F8D2AC /* Build configuration list for PBXNativeTarget "Luna" */;
 			buildPhases = (
+				0331B38AADB693E0E5E5CFE3 /* [CP] Check Pods Manifest.lock */,
 				219A16AC1F90154F00F8D2AC /* Sources */,
 				219A16AD1F90154F00F8D2AC /* Frameworks */,
 				219A16AE1F90154F00F8D2AC /* Resources */,
+				B64C0CE7383F4DDFF9DB3F34 /* [CP] Embed Pods Frameworks */,
+				EE14845BFDE7D5C154CA946D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -258,8 +301,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				219A16C11F90154F00F8D2AC /* LaunchScreen.storyboard in Resources */,
+				2106041F1FA8071200125401 /* PAMTask.json in Resources */,
 				219A16BE1F90154F00F8D2AC /* Assets.xcassets in Resources */,
 				219A16B91F90154F00F8D2AC /* Main.storyboard in Resources */,
+				210604211FA8078000125401 /* PAM.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,11 +324,81 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0331B38AADB693E0E5E5CFE3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Luna-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B64C0CE7383F4DDFF9DB3F34 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Luna/Pods-Luna-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Gloss/Gloss.framework",
+				"${BUILT_PRODUCTS_DIR}/OMHClient/OMHClient.framework",
+				"${BUILT_PRODUCTS_DIR}/ResearchKit/ResearchKit.framework",
+				"${BUILT_PRODUCTS_DIR}/ResearchSuiteExtensions/ResearchSuiteExtensions.framework",
+				"${BUILT_PRODUCTS_DIR}/ResearchSuiteResultsProcessor/ResearchSuiteResultsProcessor.framework",
+				"${BUILT_PRODUCTS_DIR}/ResearchSuiteTaskBuilder/ResearchSuiteTaskBuilder.framework",
+				"${BUILT_PRODUCTS_DIR}/sdlrkx/sdlrkx.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Gloss.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OMHClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ResearchKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ResearchSuiteExtensions.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ResearchSuiteResultsProcessor.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ResearchSuiteTaskBuilder.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/sdlrkx.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Luna/Pods-Luna-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE14845BFDE7D5C154CA946D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Luna/Pods-Luna-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		219A16AC1F90154F00F8D2AC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2144DB921FA7D95D0006A1C0 /* UserDefaultsStateHelper.swift in Sources */,
+				2144DB961FA7DADC0006A1C0 /* RKViewController.swift in Sources */,
 				219A16BC1F90154F00F8D2AC /* Luna.xcdatamodeld in Sources */,
 				219A16B61F90154F00F8D2AC /* ViewController.swift in Sources */,
 				219A16B41F90154F00F8D2AC /* AppDelegate.swift in Sources */,
@@ -438,10 +553,15 @@
 		};
 		219A16DC1F90155000F8D2AC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF5632E7C48567CCA1976DF9 /* Pods-Luna.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Luna/Luna.entitlements;
 				DEVELOPMENT_TEAM = UZ7YA5AJPA;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = Luna/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jacob-apps-2017.Luna";
@@ -452,10 +572,15 @@
 		};
 		219A16DD1F90155000F8D2AC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E76B6883045EF0636E097C9 /* Pods-Luna.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Luna/Luna.entitlements;
 				DEVELOPMENT_TEAM = UZ7YA5AJPA;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = Luna/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jacob-apps-2017.Luna";

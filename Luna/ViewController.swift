@@ -8,8 +8,16 @@
 
 import UIKit
 import HealthKit
+import ResearchKit
+import sdlrkx
+import ResearchSuiteTaskBuilder
 
-class ViewController: UIViewController {
+class ViewController: RKViewController {
+    
+    var taskBuilder: RSTBTaskBuilder!
+    
+    var stateHelper: UserDefaultsStateHelper!
+    
     let healthStore = HKHealthStore()
 
     override func viewDidLoad() {
@@ -33,6 +41,29 @@ class ViewController: UIViewController {
             self.stepsprogress.progress = Float(step_percent)
             self.steps.text = "\(intstep)"
         })
+        
+        let stepGeneratorServices: [RSTBStepGenerator] = [
+            PAMStepGenerator()
+        ]
+        
+        let answerFormatGeneratorServices: [RSTBAnswerFormatGenerator] = [
+            RSTBSingleChoiceStepGenerator()
+        ]
+        
+        let elementGeneratorServices: [RSTBElementGenerator] = [
+            RSTBElementListGenerator(),
+            RSTBElementFileGenerator(),
+            RSTBElementSelectorGenerator()
+        ]
+        
+        self.stateHelper = UserDefaultsStateHelper()
+        
+        // Do any additional setup after loading the view, typically from a nib.
+        self.taskBuilder = RSTBTaskBuilder(
+            stateHelper: self.stateHelper,
+            elementGeneratorServices: elementGeneratorServices,
+            stepGeneratorServices: stepGeneratorServices,
+            answerFormatGeneratorServices: answerFormatGeneratorServices)
         
         let typestoRead = Set([
             HKObjectType.categoryType(forIdentifier: HKCategoryTypeIdentifier.sleepAnalysis)!
@@ -65,8 +96,7 @@ class ViewController: UIViewController {
             if let result = tmpResult {
                 for item in result {
                     if let sample = item as? HKCategorySample {
-                        let value = (sample.value == HKCategoryValueSleepAnalysis.inBed.rawValue) ? "InBed" : "Asleep"
-                        print("sleep: \(sample.startDate) \(sample.endDate) - sourceRevision: \(sample.source.name) - value: \(value)")
+                        _ = (sample.value == HKCategoryValueSleepAnalysis.inBed.rawValue) ? "InBed" : "Asleep"
                         let seconds = sample.endDate.timeIntervalSince(sample.startDate)
                         let minutes = seconds/60
                         let hours = minutes/60
@@ -132,6 +162,17 @@ class ViewController: UIViewController {
         }
         healthStore.execute(query)
     }
+    
+    @IBAction func launchPAM(_ sender: UIButton) {
+        
+        guard let steps = self.taskBuilder.steps(forElementFilename: "PAMTask") else { return }
+        
+        let task = ORKOrderedTask(identifier: "PAM identifier", steps: steps)
+        
+        self.launchAssessmentForTask(task)
+        
+    }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

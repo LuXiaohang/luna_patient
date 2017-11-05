@@ -1,0 +1,11 @@
+{
+  "type"    : "elementList",
+  "identifier": "PAMTask",
+  "elements"         : [
+    {
+      "identifier"   :   "PAM",
+      "type"            : "PAM",
+      "optional": true
+    }
+  ]
+}
