@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		2144DB921FA7D95D0006A1C0 /* UserDefaultsStateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2144DB911FA7D95D0006A1C0 /* UserDefaultsStateHelper.swift */; };
 		2144DB961FA7DADC0006A1C0 /* RKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2144DB951FA7DADC0006A1C0 /* RKViewController.swift */; };
-		215A18591FBD314300C7BF83 /* PAM.json in Resources */ = {isa = PBXBuildFile; fileRef = 215A18581FBD314300C7BF83 /* PAM.json */; };
-		215A185B1FBD315800C7BF83 /* PAMTask.json in Resources */ = {isa = PBXBuildFile; fileRef = 215A185A1FBD315800C7BF83 /* PAMTask.json */; };
 		2174AEC01FA76A1E00069172 /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2174AEBF1FA76A1E00069172 /* ResearchKit.framework */; };
 		2174AEC21FA76AD400069172 /* Pods_Luna.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2174AEC11FA76AD400069172 /* Pods_Luna.framework */; };
 		219A16B41F90154F00F8D2AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219A16B31F90154F00F8D2AC /* AppDelegate.swift */; };
@@ -23,6 +21,10 @@
 		219A16D71F90155000F8D2AC /* LunaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219A16D61F90155000F8D2AC /* LunaUITests.swift */; };
 		21AFB8791FA773EB002658D6 /* sdlrkx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21AFB8781FA773EB002658D6 /* sdlrkx.framework */; };
 		21FD95B41F9138A300F79470 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21FD95B31F9138A300F79470 /* HealthKit.framework */; };
+		C12258C71FBE693B00D01371 /* PAM.json in Resources */ = {isa = PBXBuildFile; fileRef = C12258C61FBE693B00D01371 /* PAM.json */; };
+		C12258C91FBE694400D01371 /* PAMTask.json in Resources */ = {isa = PBXBuildFile; fileRef = C12258C81FBE694400D01371 /* PAMTask.json */; };
+		C12258CB1FBE6ECC00D01371 /* MedicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12258CA1FBE6ECC00D01371 /* MedicationViewController.swift */; };
+		C12F7DE81FBE7A5F00DDBB8F /* addmedicineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12F7DE71FBE7A5F00DDBB8F /* addmedicineViewController.swift */; };
 		CD7E259224372E140924C6C6 /* Pods_Luna.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7763560B246D5F82B11E47D /* Pods_Luna.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,8 +48,6 @@
 /* Begin PBXFileReference section */
 		2144DB911FA7D95D0006A1C0 /* UserDefaultsStateHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsStateHelper.swift; sourceTree = "<group>"; };
 		2144DB951FA7DADC0006A1C0 /* RKViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RKViewController.swift; sourceTree = "<group>"; };
-		215A18581FBD314300C7BF83 /* PAM.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PAM.json; sourceTree = SOURCE_ROOT; };
-		215A185A1FBD315800C7BF83 /* PAMTask.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PAMTask.json; sourceTree = SOURCE_ROOT; };
 		2174AEBF1FA76A1E00069172 /* ResearchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ResearchKit.framework; path = "../../Library/Developer/Xcode/DerivedData/Luna-hffvazvackcsosbfjpneojwxngwn/Build/Products/Debug-iphonesimulator/ResearchKit/ResearchKit.framework"; sourceTree = "<group>"; };
 		2174AEC11FA76AD400069172 /* Pods_Luna.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_Luna.framework; path = "Pods/../build/Debug-iphoneos/Pods_Luna.framework"; sourceTree = "<group>"; };
 		219A16B01F90154F00F8D2AC /* Luna.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Luna.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,6 +68,10 @@
 		21FD95B11F9138A300F79470 /* Luna.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Luna.entitlements; sourceTree = "<group>"; };
 		21FD95B31F9138A300F79470 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		5E76B6883045EF0636E097C9 /* Pods-Luna.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Luna.release.xcconfig"; path = "Pods/Target Support Files/Pods-Luna/Pods-Luna.release.xcconfig"; sourceTree = "<group>"; };
+		C12258C61FBE693B00D01371 /* PAM.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PAM.json; sourceTree = SOURCE_ROOT; };
+		C12258C81FBE694400D01371 /* PAMTask.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PAMTask.json; sourceTree = SOURCE_ROOT; };
+		C12258CA1FBE6ECC00D01371 /* MedicationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationViewController.swift; sourceTree = "<group>"; };
+		C12F7DE71FBE7A5F00DDBB8F /* addmedicineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addmedicineViewController.swift; sourceTree = "<group>"; };
 		DF5632E7C48567CCA1976DF9 /* Pods-Luna.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Luna.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Luna/Pods-Luna.debug.xcconfig"; sourceTree = "<group>"; };
 		F7763560B246D5F82B11E47D /* Pods_Luna.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Luna.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -132,13 +136,15 @@
 				219A16B51F90154F00F8D2AC /* ViewController.swift */,
 				2144DB951FA7DADC0006A1C0 /* RKViewController.swift */,
 				2144DB911FA7D95D0006A1C0 /* UserDefaultsStateHelper.swift */,
-				215A185A1FBD315800C7BF83 /* PAMTask.json */,
-				215A18581FBD314300C7BF83 /* PAM.json */,
 				219A16B71F90154F00F8D2AC /* Main.storyboard */,
+				C12258C81FBE694400D01371 /* PAMTask.json */,
+				C12258C61FBE693B00D01371 /* PAM.json */,
 				219A16BD1F90154F00F8D2AC /* Assets.xcassets */,
 				219A16BF1F90154F00F8D2AC /* LaunchScreen.storyboard */,
 				219A16C21F90154F00F8D2AC /* Info.plist */,
 				219A16BA1F90154F00F8D2AC /* Luna.xcdatamodeld */,
+				C12258CA1FBE6ECC00D01371 /* MedicationViewController.swift */,
+				C12F7DE71FBE7A5F00DDBB8F /* addmedicineViewController.swift */,
 			);
 			path = Luna;
 			sourceTree = "<group>";
@@ -300,10 +306,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				215A185B1FBD315800C7BF83 /* PAMTask.json in Resources */,
-				215A18591FBD314300C7BF83 /* PAM.json in Resources */,
+				C12258C91FBE694400D01371 /* PAMTask.json in Resources */,
 				219A16C11F90154F00F8D2AC /* LaunchScreen.storyboard in Resources */,
 				219A16BE1F90154F00F8D2AC /* Assets.xcassets in Resources */,
+				C12258C71FBE693B00D01371 /* PAM.json in Resources */,
 				219A16B91F90154F00F8D2AC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -400,6 +406,8 @@
 				2144DB921FA7D95D0006A1C0 /* UserDefaultsStateHelper.swift in Sources */,
 				2144DB961FA7DADC0006A1C0 /* RKViewController.swift in Sources */,
 				219A16BC1F90154F00F8D2AC /* Luna.xcdatamodeld in Sources */,
+				C12258CB1FBE6ECC00D01371 /* MedicationViewController.swift in Sources */,
+				C12F7DE81FBE7A5F00DDBB8F /* addmedicineViewController.swift in Sources */,
 				219A16B61F90154F00F8D2AC /* ViewController.swift in Sources */,
 				219A16B41F90154F00F8D2AC /* AppDelegate.swift in Sources */,
 			);

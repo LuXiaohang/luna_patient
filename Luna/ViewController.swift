@@ -14,6 +14,9 @@ import ResearchSuiteTaskBuilder
 
 class ViewController: RKViewController {
     
+    @IBOutlet weak var medicationbg: UIView!
+    @IBOutlet weak var moodbg: UIView!
+    @IBOutlet weak var activitybg: UIView!
     var taskBuilder: RSTBTaskBuilder!
     
     var stateHelper: UserDefaultsStateHelper!
@@ -22,6 +25,28 @@ class ViewController: RKViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        moodbg.backgroundColor = UIColor(red: 90/255, green: 200/255, blue: 250/255, alpha: 1)
+        moodbg.layer.shadowColor = UIColor(red: 90/255, green: 200/255, blue: 250/255, alpha: 1).cgColor;
+        moodbg.layer.shadowOffset = CGSize(width: 0, height: 15)
+        moodbg.layer.shadowOpacity = 0.5;
+        moodbg.layer.shadowRadius = 10.0;
+        moodbg.layer.cornerRadius = 5;
+        
+        activitybg.backgroundColor = UIColor(red: 90/255, green: 200/255, blue: 250/255, alpha: 1)
+        activitybg.layer.shadowColor = UIColor(red: 90/255, green: 200/255, blue: 250/255, alpha: 1).cgColor;
+        activitybg.layer.shadowOffset = CGSize(width: 0, height: 15)
+        activitybg.layer.shadowOpacity = 0.5;
+        activitybg.layer.shadowRadius = 10.0;
+        activitybg.layer.cornerRadius = 5;
+        
+        medicationbg.backgroundColor = UIColor(red: 90/255, green: 200/255, blue: 250/255, alpha: 1)
+        medicationbg.layer.shadowColor = UIColor(red: 90/255, green: 200/255, blue: 250/255, alpha: 1).cgColor;
+        medicationbg.layer.shadowOffset = CGSize(width: 0, height: 15)
+        medicationbg.layer.shadowOpacity = 0.5;
+        medicationbg.layer.shadowRadius = 10.0;
+        medicationbg.layer.cornerRadius = 5;
+        
         // Do any additional setup after loading the view, typically from a nib.
         
         hours_slept(completion:{ (hoursRetrieved: Float) in
