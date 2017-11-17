@@ -21,10 +21,13 @@
 		219A16D71F90155000F8D2AC /* LunaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219A16D61F90155000F8D2AC /* LunaUITests.swift */; };
 		21AFB8791FA773EB002658D6 /* sdlrkx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21AFB8781FA773EB002658D6 /* sdlrkx.framework */; };
 		21FD95B41F9138A300F79470 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21FD95B31F9138A300F79470 /* HealthKit.framework */; };
+		C11DBB1B1FBE8F2D00FE875A /* historyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11DBB1A1FBE8F2D00FE875A /* historyViewController.swift */; };
 		C12258C71FBE693B00D01371 /* PAM.json in Resources */ = {isa = PBXBuildFile; fileRef = C12258C61FBE693B00D01371 /* PAM.json */; };
 		C12258C91FBE694400D01371 /* PAMTask.json in Resources */ = {isa = PBXBuildFile; fileRef = C12258C81FBE694400D01371 /* PAMTask.json */; };
 		C12258CB1FBE6ECC00D01371 /* MedicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12258CA1FBE6ECC00D01371 /* MedicationViewController.swift */; };
 		C12F7DE81FBE7A5F00DDBB8F /* addmedicineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12F7DE71FBE7A5F00DDBB8F /* addmedicineViewController.swift */; };
+		C1F92FBA1FBF363B00442AA2 /* medicineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F92FB81FBF363B00442AA2 /* medicineTableViewCell.swift */; };
+		C1F92FBB1FBF363B00442AA2 /* medicineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1F92FB91FBF363B00442AA2 /* medicineTableViewCell.xib */; };
 		CD7E259224372E140924C6C6 /* Pods_Luna.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7763560B246D5F82B11E47D /* Pods_Luna.framework */; };
 /* End PBXBuildFile section */
 
@@ -68,10 +71,14 @@
 		21FD95B11F9138A300F79470 /* Luna.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Luna.entitlements; sourceTree = "<group>"; };
 		21FD95B31F9138A300F79470 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		5E76B6883045EF0636E097C9 /* Pods-Luna.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Luna.release.xcconfig"; path = "Pods/Target Support Files/Pods-Luna/Pods-Luna.release.xcconfig"; sourceTree = "<group>"; };
+		C11DBB1A1FBE8F2D00FE875A /* historyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = historyViewController.swift; sourceTree = "<group>"; };
+		C11DBB1C1FBE8F6F00FE875A /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Charts.framework; path = Carthage/Build/iOS/Charts.framework; sourceTree = "<group>"; };
 		C12258C61FBE693B00D01371 /* PAM.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PAM.json; sourceTree = SOURCE_ROOT; };
 		C12258C81FBE694400D01371 /* PAMTask.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PAMTask.json; sourceTree = SOURCE_ROOT; };
 		C12258CA1FBE6ECC00D01371 /* MedicationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationViewController.swift; sourceTree = "<group>"; };
 		C12F7DE71FBE7A5F00DDBB8F /* addmedicineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addmedicineViewController.swift; sourceTree = "<group>"; };
+		C1F92FB81FBF363B00442AA2 /* medicineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = medicineTableViewCell.swift; sourceTree = "<group>"; };
+		C1F92FB91FBF363B00442AA2 /* medicineTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = medicineTableViewCell.xib; sourceTree = "<group>"; };
 		DF5632E7C48567CCA1976DF9 /* Pods-Luna.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Luna.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Luna/Pods-Luna.debug.xcconfig"; sourceTree = "<group>"; };
 		F7763560B246D5F82B11E47D /* Pods_Luna.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Luna.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -145,6 +152,9 @@
 				219A16BA1F90154F00F8D2AC /* Luna.xcdatamodeld */,
 				C12258CA1FBE6ECC00D01371 /* MedicationViewController.swift */,
 				C12F7DE71FBE7A5F00DDBB8F /* addmedicineViewController.swift */,
+				C11DBB1A1FBE8F2D00FE875A /* historyViewController.swift */,
+				C1F92FB81FBF363B00442AA2 /* medicineTableViewCell.swift */,
+				C1F92FB91FBF363B00442AA2 /* medicineTableViewCell.xib */,
 			);
 			path = Luna;
 			sourceTree = "<group>";
@@ -170,6 +180,7 @@
 		21FD95B21F9138A300F79470 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C11DBB1C1FBE8F6F00FE875A /* Charts.framework */,
 				21AFB8781FA773EB002658D6 /* sdlrkx.framework */,
 				2174AEC11FA76AD400069172 /* Pods_Luna.framework */,
 				2174AEBF1FA76A1E00069172 /* ResearchKit.framework */,
@@ -307,6 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C12258C91FBE694400D01371 /* PAMTask.json in Resources */,
+				C1F92FBB1FBF363B00442AA2 /* medicineTableViewCell.xib in Resources */,
 				219A16C11F90154F00F8D2AC /* LaunchScreen.storyboard in Resources */,
 				219A16BE1F90154F00F8D2AC /* Assets.xcassets in Resources */,
 				C12258C71FBE693B00D01371 /* PAM.json in Resources */,
@@ -406,10 +418,12 @@
 				2144DB921FA7D95D0006A1C0 /* UserDefaultsStateHelper.swift in Sources */,
 				2144DB961FA7DADC0006A1C0 /* RKViewController.swift in Sources */,
 				219A16BC1F90154F00F8D2AC /* Luna.xcdatamodeld in Sources */,
+				C1F92FBA1FBF363B00442AA2 /* medicineTableViewCell.swift in Sources */,
 				C12258CB1FBE6ECC00D01371 /* MedicationViewController.swift in Sources */,
 				C12F7DE81FBE7A5F00DDBB8F /* addmedicineViewController.swift in Sources */,
 				219A16B61F90154F00F8D2AC /* ViewController.swift in Sources */,
 				219A16B41F90154F00F8D2AC /* AppDelegate.swift in Sources */,
+				C11DBB1B1FBE8F2D00FE875A /* historyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -569,6 +583,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = Luna/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -588,6 +603,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = Luna/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

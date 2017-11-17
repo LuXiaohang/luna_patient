@@ -1,0 +1,2 @@
+github "patchthecode/JTAppleCalendar" ~> 7.0
+github "danielgindi/Charts" == 3.0.4
